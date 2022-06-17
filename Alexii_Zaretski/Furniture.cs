@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,7 @@ namespace Alexii_Zaretski
         }
 
         //Parametrized constructor
-        public Furniture(int yearPublished, string title, string sellerPesel, string sellerName, string sellerEmail, string country, string city, float price, bool isAvailable, float height, float width, float length, string material) : base(yearPublished, title, sellerPesel, sellerName, sellerEmail, country, city, price, isAvailable)
+        public Furniture(int yearPublished, string title, string sellerPesel, string sellerName, string sellerEmail, string country, string city, float price, bool isAvailable, DateTime sellerBirthDate, Bitmap itemPicture, float height, float width, float length, string material) : base(yearPublished, title, sellerPesel, sellerName, sellerEmail, country, city, price, isAvailable, sellerBirthDate, itemPicture)
         {
             this.height = height;
             this.width = width;

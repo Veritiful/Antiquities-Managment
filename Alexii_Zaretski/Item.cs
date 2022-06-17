@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,9 @@ namespace Alexii_Zaretski
         float price;
         bool isAvailable;
 
+        DateTime sellerBirthDate;
+        Bitmap itemPicture;
+
         static int amountOfItems = 0;
 
         //Default constructor
@@ -37,10 +41,12 @@ namespace Alexii_Zaretski
             this.city = "null";
             this.price = 0f;
             this.isAvailable = false;
+            this.sellerBirthDate = new DateTime(0);
+            this.itemPicture = new Bitmap(32, 32);
         }
 
         //Parametrized constructor
-        public Item(int yearPublished, string title, string sellerPesel, string sellerName, string sellerEmail, string country, string city, float price, bool isAvailable)
+        public Item(int yearPublished, string title, string sellerPesel, string sellerName, string sellerEmail, string country, string city, float price, bool isAvailable, DateTime sellerBirthDate, Bitmap itemPicture)
         {
             amountOfItems++;
             this.id = amountOfItems;
@@ -53,6 +59,8 @@ namespace Alexii_Zaretski
             this.city = city;
             this.price = price;
             this.isAvailable = isAvailable;
+            this.sellerBirthDate = sellerBirthDate;
+            this.itemPicture = itemPicture;
         }
 
         //Duplicating constructor
@@ -69,6 +77,8 @@ namespace Alexii_Zaretski
             this.city = item.city;
             this.price = item.price;
             this.isAvailable = item.isAvailable;
+            this.sellerBirthDate = item.sellerBirthDate;
+            this.itemPicture = item.itemPicture;
         }
 
         //Destructor
@@ -85,6 +95,7 @@ namespace Alexii_Zaretski
             lb.Items.Add("Seller's pesel:\t" + sellerPesel);
             lb.Items.Add("Seller's name:\t" + sellerName);
             lb.Items.Add("Seller's email:\t" + sellerEmail);
+            lb.Items.Add("Seller's birth date:\t" + sellerBirthDate.ToString("dd/MM/yyyy"));
             lb.Items.Add("Location:\t" + ReturnItemLocation());
             lb.Items.Add("Price:\t" + price);
             lb.Items.Add("Is available:\t" + isAvailable);

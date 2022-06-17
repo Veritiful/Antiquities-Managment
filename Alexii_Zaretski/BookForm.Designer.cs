@@ -56,9 +56,18 @@
             this.authorTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.browseBtn = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.chaptersTextBox = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.yearNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagesNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // peselMasked
@@ -101,7 +110,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(314, 14);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(469, 420);
+            this.listBox1.Size = new System.Drawing.Size(469, 212);
             this.listBox1.TabIndex = 98;
             // 
             // isAvailableCheck
@@ -326,11 +335,87 @@
             this.label11.TabIndex = 103;
             this.label11.Text = "Author:";
             // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Location = new System.Drawing.Point(85, 305);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker.TabIndex = 107;
+            // 
+            // browseBtn
+            // 
+            this.browseBtn.Location = new System.Drawing.Point(84, 331);
+            this.browseBtn.Name = "browseBtn";
+            this.browseBtn.Size = new System.Drawing.Size(201, 29);
+            this.browseBtn.TabIndex = 108;
+            this.browseBtn.Text = "Browse...";
+            this.browseBtn.UseVisualStyleBackColor = true;
+            this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(1, 311);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(66, 13);
+            this.label13.TabIndex = 109;
+            this.label13.Text = "Seller\'s birth:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(1, 339);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(60, 13);
+            this.label14.TabIndex = 110;
+            this.label14.Text = "Item photo:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(314, 233);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(469, 201);
+            this.pictureBox1.TabIndex = 111;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(1, 372);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(79, 13);
+            this.label15.TabIndex = 112;
+            this.label15.Text = "Book chapters:";
+            // 
+            // chaptersTextBox
+            // 
+            this.chaptersTextBox.Location = new System.Drawing.Point(84, 369);
+            this.chaptersTextBox.Name = "chaptersTextBox";
+            this.chaptersTextBox.Size = new System.Drawing.Size(201, 20);
+            this.chaptersTextBox.TabIndex = 113;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(1, 396);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(80, 13);
+            this.label16.TabIndex = 114;
+            this.label16.Text = "(Separate by #)";
+            // 
             // BookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.chaptersTextBox);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.browseBtn);
+            this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.languageTextBox);
             this.Controls.Add(this.authorTextBox);
             this.Controls.Add(this.label10);
@@ -363,6 +448,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.yearNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagesNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,5 +484,13 @@
         private System.Windows.Forms.TextBox authorTextBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.Button browseBtn;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox chaptersTextBox;
+        private System.Windows.Forms.Label label16;
     }
 }

@@ -56,11 +56,17 @@
             this.label10 = new System.Windows.Forms.Label();
             this.materialText = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.browseBtn = new System.Windows.Forms.Button();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.yearNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heightNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.widthNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lengthNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // peselMasked
@@ -99,7 +105,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(322, 15);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(469, 420);
+            this.listBox1.Size = new System.Drawing.Size(469, 212);
             this.listBox1.TabIndex = 117;
             // 
             // isAvailableCheck
@@ -355,11 +361,59 @@
             this.label11.TabIndex = 124;
             this.label11.Text = "Material:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(322, 244);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(469, 191);
+            this.pictureBox1.TabIndex = 130;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(9, 363);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(60, 13);
+            this.label14.TabIndex = 129;
+            this.label14.Text = "Item photo:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(9, 335);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(66, 13);
+            this.label13.TabIndex = 128;
+            this.label13.Text = "Seller\'s birth:";
+            // 
+            // browseBtn
+            // 
+            this.browseBtn.Location = new System.Drawing.Point(92, 355);
+            this.browseBtn.Name = "browseBtn";
+            this.browseBtn.Size = new System.Drawing.Size(201, 29);
+            this.browseBtn.TabIndex = 127;
+            this.browseBtn.Text = "Browse...";
+            this.browseBtn.UseVisualStyleBackColor = true;
+            this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
+            // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Location = new System.Drawing.Point(93, 329);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker.TabIndex = 126;
+            // 
             // FurnitureForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.browseBtn);
+            this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.materialText);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -394,6 +448,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.heightNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.widthNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lengthNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -429,5 +484,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox materialText;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button browseBtn;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
     }
 }

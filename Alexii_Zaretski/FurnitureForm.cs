@@ -19,8 +19,19 @@ namespace Alexii_Zaretski
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Furniture furniture = new Furniture(Convert.ToInt32(Math.Round(yearNumeric.Value, 0)), titleTextBox.Text, peselMasked.Text, nameTextBox.Text, emailTextBox.Text, countryTextBox.Text, cityTextBox.Text, Convert.ToSingle(priceNumeric.Value), isAvailableCheck.Checked, Convert.ToSingle(heightNumeric.Value), Convert.ToSingle(widthNumeric.Value), Convert.ToSingle(lengthNumeric.Value), materialText.Text);
+            Furniture furniture = new Furniture(Convert.ToInt32(Math.Round(yearNumeric.Value, 0)), titleTextBox.Text, peselMasked.Text, nameTextBox.Text, emailTextBox.Text, countryTextBox.Text, cityTextBox.Text, Convert.ToSingle(priceNumeric.Value), isAvailableCheck.Checked, dateTimePicker.Value, new Bitmap(pictureBox1.Image), Convert.ToSingle(heightNumeric.Value), Convert.ToSingle(widthNumeric.Value), Convert.ToSingle(lengthNumeric.Value), materialText.Text);
             furniture.Write(listBox1);
+        }
+
+        private void browseBtn_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string fileName = openFileDialog1.FileName;
+                Bitmap bitmapPh;
+                bitmapPh = new Bitmap(fileName);
+                pictureBox1.Image = bitmapPh;
+            }
         }
     }
 }
