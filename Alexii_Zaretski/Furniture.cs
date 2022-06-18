@@ -42,7 +42,7 @@ namespace Alexii_Zaretski
             this.material = furniture.material;
         }
 
-        public void Write(ListBox lb)
+        override public void Write(ListBox lb)
         {
             base.Write(lb);
             lb.Items.Add("Dimensions:\t" + ReturnDimensions());

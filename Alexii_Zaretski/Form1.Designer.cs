@@ -30,6 +30,7 @@
         {
             this.btnBook = new System.Windows.Forms.Button();
             this.btnFurn = new System.Windows.Forms.Button();
+            this.displayBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBook
@@ -52,11 +53,22 @@
             this.btnFurn.UseVisualStyleBackColor = true;
             this.btnFurn.Click += new System.EventHandler(this.btnFurn_Click);
             // 
+            // displayBtn
+            // 
+            this.displayBtn.Location = new System.Drawing.Point(12, 341);
+            this.displayBtn.Name = "displayBtn";
+            this.displayBtn.Size = new System.Drawing.Size(776, 97);
+            this.displayBtn.TabIndex = 2;
+            this.displayBtn.Text = "Display Items";
+            this.displayBtn.UseVisualStyleBackColor = true;
+            this.displayBtn.Click += new System.EventHandler(this.displayBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.displayBtn);
             this.Controls.Add(this.btnFurn);
             this.Controls.Add(this.btnBook);
             this.Name = "Form1";
@@ -70,6 +82,7 @@
 
         private System.Windows.Forms.Button btnBook;
         private System.Windows.Forms.Button btnFurn;
+        private System.Windows.Forms.Button displayBtn;
     }
 }
 

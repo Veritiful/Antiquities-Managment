@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Alexii_Zaretski
 {
-    class Item
+    public abstract class Item
     {
         int id;
         int yearPublished;
@@ -87,7 +87,7 @@ namespace Alexii_Zaretski
             MessageBox.Show("Destruction of the object");
         }
 
-        public void Write(ListBox lb)
+        public virtual void Write(ListBox lb)
         {
             lb.Items.Add("ID:\t" + id);
             lb.Items.Add("Year published:\t" + yearPublished);
@@ -99,6 +99,21 @@ namespace Alexii_Zaretski
             lb.Items.Add("Location:\t" + ReturnItemLocation());
             lb.Items.Add("Price:\t" + price);
             lb.Items.Add("Is available:\t" + isAvailable);
+        }
+
+        public virtual void Write(ListBox lb, PictureBox pb)
+        {
+            lb.Items.Add("ID:\t" + id);
+            lb.Items.Add("Year published:\t" + yearPublished);
+            lb.Items.Add("Title:\t" + title);
+            lb.Items.Add("Seller's pesel:\t" + sellerPesel);
+            lb.Items.Add("Seller's name:\t" + sellerName);
+            lb.Items.Add("Seller's email:\t" + sellerEmail);
+            lb.Items.Add("Seller's birth date:\t" + sellerBirthDate.ToString("dd/MM/yyyy"));
+            lb.Items.Add("Location:\t" + ReturnItemLocation());
+            lb.Items.Add("Price:\t" + price);
+            lb.Items.Add("Is available:\t" + isAvailable);
+            pb.Image = itemPicture;
         }
 
         private int yearsOnShowcase()

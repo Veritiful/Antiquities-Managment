@@ -12,6 +12,8 @@ namespace Alexii_Zaretski
 {
     public partial class Form1 : Form
     {
+        public static List<Item> listI = new List<Item>();
+
         public Form1()
         {
             InitializeComponent();
@@ -32,6 +34,12 @@ namespace Alexii_Zaretski
         {
             FurnitureForm furnitureForm = new FurnitureForm();
             furnitureForm.ShowDialog();
+        }
+
+        private void displayBtn_Click(object sender, EventArgs e)
+        {
+            DisplayForm displayForm = new DisplayForm();
+            displayForm.ShowDialog();
         }
     }
 }

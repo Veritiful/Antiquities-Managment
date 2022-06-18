@@ -45,7 +45,7 @@ namespace Alexii_Zaretski
             this.hardCover = book.hardCover;
         }
 
-        public void Write(ListBox lb)
+        override public void Write(ListBox lb)
         {
             base.Write(lb);
             lb.Items.Add("Offer:\t" + ReturnBookType() + " " + ReturnBookContent());

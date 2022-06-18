@@ -21,6 +21,7 @@ namespace Alexii_Zaretski
         {
             Furniture furniture = new Furniture(Convert.ToInt32(Math.Round(yearNumeric.Value, 0)), titleTextBox.Text, peselMasked.Text, nameTextBox.Text, emailTextBox.Text, countryTextBox.Text, cityTextBox.Text, Convert.ToSingle(priceNumeric.Value), isAvailableCheck.Checked, dateTimePicker.Value, new Bitmap(pictureBox1.Image), Convert.ToSingle(heightNumeric.Value), Convert.ToSingle(widthNumeric.Value), Convert.ToSingle(lengthNumeric.Value), materialText.Text);
             furniture.Write(listBox1);
+            Form1.listI.Add(furniture);
         }
 
         private void browseBtn_Click(object sender, EventArgs e)
