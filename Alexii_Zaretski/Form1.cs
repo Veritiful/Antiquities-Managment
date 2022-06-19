@@ -41,5 +41,11 @@ namespace Alexii_Zaretski
             DisplayForm displayForm = new DisplayForm();
             displayForm.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CompareForm compareForm = new CompareForm();
+            compareForm.ShowDialog();
+        }
     }
 }

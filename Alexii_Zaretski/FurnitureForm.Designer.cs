@@ -61,6 +61,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.browseBtn = new System.Windows.Forms.Button();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.fillBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.yearNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heightNumeric)).BeginInit();
@@ -75,7 +76,7 @@
             this.peselMasked.Mask = "00000000000";
             this.peselMasked.Name = "peselMasked";
             this.peselMasked.Size = new System.Drawing.Size(206, 20);
-            this.peselMasked.TabIndex = 99;
+            this.peselMasked.TabIndex = 3;
             this.peselMasked.ValidatingType = typeof(int);
             // 
             // yearNumeric
@@ -93,7 +94,7 @@
             0});
             this.yearNumeric.Name = "yearNumeric";
             this.yearNumeric.Size = new System.Drawing.Size(206, 20);
-            this.yearNumeric.TabIndex = 102;
+            this.yearNumeric.TabIndex = 1;
             this.yearNumeric.Value = new decimal(new int[] {
             1900,
             0,
@@ -114,7 +115,7 @@
             this.isAvailableCheck.Location = new System.Drawing.Point(93, 208);
             this.isAvailableCheck.Name = "isAvailableCheck";
             this.isAvailableCheck.Size = new System.Drawing.Size(15, 14);
-            this.isAvailableCheck.TabIndex = 114;
+            this.isAvailableCheck.TabIndex = 9;
             this.isAvailableCheck.UseVisualStyleBackColor = true;
             // 
             // label12
@@ -136,21 +137,21 @@
             0});
             this.priceNumeric.Name = "priceNumeric";
             this.priceNumeric.Size = new System.Drawing.Size(206, 20);
-            this.priceNumeric.TabIndex = 113;
+            this.priceNumeric.TabIndex = 8;
             // 
             // emailTextBox
             // 
             this.emailTextBox.Location = new System.Drawing.Point(92, 127);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(206, 20);
-            this.emailTextBox.TabIndex = 112;
+            this.emailTextBox.TabIndex = 5;
             // 
             // countryTextBox
             // 
             this.countryTextBox.Location = new System.Drawing.Point(199, 153);
             this.countryTextBox.Name = "countryTextBox";
             this.countryTextBox.Size = new System.Drawing.Size(100, 20);
-            this.countryTextBox.TabIndex = 109;
+            this.countryTextBox.TabIndex = 7;
             this.countryTextBox.Text = "Contry";
             // 
             // cityTextBox
@@ -158,7 +159,7 @@
             this.cityTextBox.Location = new System.Drawing.Point(93, 153);
             this.cityTextBox.Name = "cityTextBox";
             this.cityTextBox.Size = new System.Drawing.Size(100, 20);
-            this.cityTextBox.TabIndex = 107;
+            this.cityTextBox.TabIndex = 6;
             this.cityTextBox.Text = "City";
             // 
             // titleTextBox
@@ -166,14 +167,14 @@
             this.titleTextBox.Location = new System.Drawing.Point(92, 51);
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(206, 20);
-            this.titleTextBox.TabIndex = 106;
+            this.titleTextBox.TabIndex = 2;
             // 
             // nameTextBox
             // 
             this.nameTextBox.Location = new System.Drawing.Point(93, 101);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(206, 20);
-            this.nameTextBox.TabIndex = 104;
+            this.nameTextBox.TabIndex = 4;
             // 
             // label9
             // 
@@ -247,7 +248,7 @@
             this.btnAdd.Location = new System.Drawing.Point(224, 412);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 115;
+            this.btnAdd.TabIndex = 17;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -267,7 +268,7 @@
             0});
             this.heightNumeric.Name = "heightNumeric";
             this.heightNumeric.Size = new System.Drawing.Size(96, 20);
-            this.heightNumeric.TabIndex = 118;
+            this.heightNumeric.TabIndex = 10;
             this.heightNumeric.Value = new decimal(new int[] {
             1,
             0,
@@ -289,7 +290,7 @@
             0});
             this.widthNumeric.Name = "widthNumeric";
             this.widthNumeric.Size = new System.Drawing.Size(96, 20);
-            this.widthNumeric.TabIndex = 119;
+            this.widthNumeric.TabIndex = 11;
             this.widthNumeric.Value = new decimal(new int[] {
             1,
             0,
@@ -311,7 +312,7 @@
             0});
             this.lengthNumeric.Name = "lengthNumeric";
             this.lengthNumeric.Size = new System.Drawing.Size(96, 20);
-            this.lengthNumeric.TabIndex = 120;
+            this.lengthNumeric.TabIndex = 12;
             this.lengthNumeric.Value = new decimal(new int[] {
             1,
             0,
@@ -350,7 +351,7 @@
             this.materialText.Location = new System.Drawing.Point(106, 297);
             this.materialText.Name = "materialText";
             this.materialText.Size = new System.Drawing.Size(206, 20);
-            this.materialText.TabIndex = 125;
+            this.materialText.TabIndex = 13;
             // 
             // label11
             // 
@@ -392,7 +393,7 @@
             this.browseBtn.Location = new System.Drawing.Point(92, 355);
             this.browseBtn.Name = "browseBtn";
             this.browseBtn.Size = new System.Drawing.Size(201, 29);
-            this.browseBtn.TabIndex = 127;
+            this.browseBtn.TabIndex = 15;
             this.browseBtn.Text = "Browse...";
             this.browseBtn.UseVisualStyleBackColor = true;
             this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
@@ -402,13 +403,24 @@
             this.dateTimePicker.Location = new System.Drawing.Point(93, 329);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker.TabIndex = 126;
+            this.dateTimePicker.TabIndex = 14;
+            // 
+            // fillBtn
+            // 
+            this.fillBtn.Location = new System.Drawing.Point(143, 412);
+            this.fillBtn.Name = "fillBtn";
+            this.fillBtn.Size = new System.Drawing.Size(75, 23);
+            this.fillBtn.TabIndex = 16;
+            this.fillBtn.Text = "Fill";
+            this.fillBtn.UseVisualStyleBackColor = true;
+            this.fillBtn.Click += new System.EventHandler(this.fillBtn_Click);
             // 
             // FurnitureForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.fillBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -489,5 +501,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button browseBtn;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.Button fillBtn;
     }
 }

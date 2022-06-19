@@ -34,5 +34,25 @@ namespace Alexii_Zaretski
                 pictureBox1.Image = bitmapPh;
             }
         }
+
+        private void fillBtn_Click(object sender, EventArgs e)
+        {
+            yearNumeric.Value = 2014;
+            titleTextBox.Text = "Wooden Regal";
+            peselMasked.Text = "87268863452";
+            nameTextBox.Text = "Hassan Ji Cobelle";
+            emailTextBox.Text = "hassan@japan.com";
+            countryTextBox.Text = "Japan";
+            cityTextBox.Text = "Tokyo";
+            priceNumeric.Value = 999;
+            isAvailableCheck.Checked = true;
+            dateTimePicker.Value = DateTime.Now;
+            heightNumeric.Value = 489;
+            widthNumeric.Value = 599;
+            lengthNumeric.Value = 123;
+            materialText.Text = "wood";
+
+            MessageBox.Show("Don't forget to add picture!");
+        }
     }
 }

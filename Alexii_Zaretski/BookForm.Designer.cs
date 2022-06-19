@@ -64,6 +64,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.chaptersTextBox = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.fillBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.yearNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagesNumeric)).BeginInit();
@@ -76,7 +77,7 @@
             this.peselMasked.Mask = "00000000000";
             this.peselMasked.Name = "peselMasked";
             this.peselMasked.Size = new System.Drawing.Size(206, 20);
-            this.peselMasked.TabIndex = 72;
+            this.peselMasked.TabIndex = 3;
             this.peselMasked.ValidatingType = typeof(int);
             // 
             // openFileDialog1
@@ -98,7 +99,7 @@
             0});
             this.yearNumeric.Name = "yearNumeric";
             this.yearNumeric.Size = new System.Drawing.Size(206, 20);
-            this.yearNumeric.TabIndex = 75;
+            this.yearNumeric.TabIndex = 1;
             this.yearNumeric.Value = new decimal(new int[] {
             1900,
             0,
@@ -119,7 +120,7 @@
             this.isAvailableCheck.Location = new System.Drawing.Point(85, 207);
             this.isAvailableCheck.Name = "isAvailableCheck";
             this.isAvailableCheck.Size = new System.Drawing.Size(15, 14);
-            this.isAvailableCheck.TabIndex = 90;
+            this.isAvailableCheck.TabIndex = 9;
             this.isAvailableCheck.UseVisualStyleBackColor = true;
             // 
             // label12
@@ -141,21 +142,21 @@
             0});
             this.priceNumeric.Name = "priceNumeric";
             this.priceNumeric.Size = new System.Drawing.Size(206, 20);
-            this.priceNumeric.TabIndex = 87;
+            this.priceNumeric.TabIndex = 8;
             // 
             // emailTextBox
             // 
             this.emailTextBox.Location = new System.Drawing.Point(84, 126);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(206, 20);
-            this.emailTextBox.TabIndex = 86;
+            this.emailTextBox.TabIndex = 5;
             // 
             // countryTextBox
             // 
             this.countryTextBox.Location = new System.Drawing.Point(191, 152);
             this.countryTextBox.Name = "countryTextBox";
             this.countryTextBox.Size = new System.Drawing.Size(100, 20);
-            this.countryTextBox.TabIndex = 83;
+            this.countryTextBox.TabIndex = 7;
             this.countryTextBox.Text = "Contry";
             // 
             // cityTextBox
@@ -163,7 +164,7 @@
             this.cityTextBox.Location = new System.Drawing.Point(85, 152);
             this.cityTextBox.Name = "cityTextBox";
             this.cityTextBox.Size = new System.Drawing.Size(100, 20);
-            this.cityTextBox.TabIndex = 81;
+            this.cityTextBox.TabIndex = 6;
             this.cityTextBox.Text = "City";
             // 
             // titleTextBox
@@ -171,14 +172,14 @@
             this.titleTextBox.Location = new System.Drawing.Point(84, 50);
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(206, 20);
-            this.titleTextBox.TabIndex = 80;
+            this.titleTextBox.TabIndex = 2;
             // 
             // nameTextBox
             // 
             this.nameTextBox.Location = new System.Drawing.Point(85, 100);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(206, 20);
-            this.nameTextBox.TabIndex = 78;
+            this.nameTextBox.TabIndex = 4;
             // 
             // label9
             // 
@@ -249,7 +250,7 @@
             this.btnAdd.Location = new System.Drawing.Point(216, 411);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 92;
+            this.btnAdd.TabIndex = 18;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -260,7 +261,7 @@
             this.hardCoverCheckBox.Location = new System.Drawing.Point(272, 208);
             this.hardCoverCheckBox.Name = "hardCoverCheckBox";
             this.hardCoverCheckBox.Size = new System.Drawing.Size(15, 14);
-            this.hardCoverCheckBox.TabIndex = 99;
+            this.hardCoverCheckBox.TabIndex = 10;
             this.hardCoverCheckBox.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -287,7 +288,7 @@
             0});
             this.pagesNumeric.Name = "pagesNumeric";
             this.pagesNumeric.Size = new System.Drawing.Size(206, 20);
-            this.pagesNumeric.TabIndex = 102;
+            this.pagesNumeric.TabIndex = 11;
             this.pagesNumeric.Value = new decimal(new int[] {
             1,
             0,
@@ -308,14 +309,14 @@
             this.languageTextBox.Location = new System.Drawing.Point(84, 280);
             this.languageTextBox.Name = "languageTextBox";
             this.languageTextBox.Size = new System.Drawing.Size(206, 20);
-            this.languageTextBox.TabIndex = 106;
+            this.languageTextBox.TabIndex = 13;
             // 
             // authorTextBox
             // 
             this.authorTextBox.Location = new System.Drawing.Point(85, 254);
             this.authorTextBox.Name = "authorTextBox";
             this.authorTextBox.Size = new System.Drawing.Size(206, 20);
-            this.authorTextBox.TabIndex = 104;
+            this.authorTextBox.TabIndex = 12;
             // 
             // label10
             // 
@@ -340,14 +341,14 @@
             this.dateTimePicker.Location = new System.Drawing.Point(85, 305);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker.TabIndex = 107;
+            this.dateTimePicker.TabIndex = 14;
             // 
             // browseBtn
             // 
             this.browseBtn.Location = new System.Drawing.Point(84, 331);
             this.browseBtn.Name = "browseBtn";
             this.browseBtn.Size = new System.Drawing.Size(201, 29);
-            this.browseBtn.TabIndex = 108;
+            this.browseBtn.TabIndex = 15;
             this.browseBtn.Text = "Browse...";
             this.browseBtn.UseVisualStyleBackColor = true;
             this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
@@ -392,7 +393,7 @@
             this.chaptersTextBox.Location = new System.Drawing.Point(84, 369);
             this.chaptersTextBox.Name = "chaptersTextBox";
             this.chaptersTextBox.Size = new System.Drawing.Size(201, 20);
-            this.chaptersTextBox.TabIndex = 113;
+            this.chaptersTextBox.TabIndex = 16;
             // 
             // label16
             // 
@@ -403,11 +404,22 @@
             this.label16.TabIndex = 114;
             this.label16.Text = "(Separate by #)";
             // 
+            // fillBtn
+            // 
+            this.fillBtn.Location = new System.Drawing.Point(135, 411);
+            this.fillBtn.Name = "fillBtn";
+            this.fillBtn.Size = new System.Drawing.Size(75, 23);
+            this.fillBtn.TabIndex = 17;
+            this.fillBtn.Text = "Fill";
+            this.fillBtn.UseVisualStyleBackColor = true;
+            this.fillBtn.Click += new System.EventHandler(this.fillBtn_Click);
+            // 
             // BookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.fillBtn);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.chaptersTextBox);
             this.Controls.Add(this.label15);
@@ -492,5 +504,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox chaptersTextBox;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button fillBtn;
     }
 }

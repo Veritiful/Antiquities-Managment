@@ -39,5 +39,26 @@ namespace Alexii_Zaretski
                 pictureBox1.Image = bitmapPh;
             }
         }
+
+        private void fillBtn_Click(object sender, EventArgs e)
+        {
+            yearNumeric.Value = 2004;
+            titleTextBox.Text = "Golden Fool";
+            peselMasked.Text = "87268863452";
+            nameTextBox.Text = "Hassan Ji Cobelle";
+            emailTextBox.Text = "hassan@japan.com";
+            countryTextBox.Text = "Japan";
+            cityTextBox.Text = "Tokyo";
+            priceNumeric.Value = 999;
+            isAvailableCheck.Checked = true;
+            dateTimePicker.Value = DateTime.Now;
+            pagesNumeric.Value = 634;
+            languageTextBox.Text = "english";
+            authorTextBox.Text = "Robin Hobb";
+            hardCoverCheckBox.Checked = true;
+            chaptersTextBox.Text = "Palace#Dreaming in Arles#Demonstration#Who's Joe?#The Starcourt Battle";
+            MessageBox.Show("Don't forget to add picture!");
+
+        }
     }
 }

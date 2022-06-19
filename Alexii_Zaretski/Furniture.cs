@@ -58,5 +58,29 @@ namespace Alexii_Zaretski
         {
             return height * width * length;
         }
+
+        public static bool operator ==(Furniture fn1, Furniture fn2)
+        {
+            if (fn1.material == fn2.material && fn1.height == fn2.height && fn1.width == fn2.width && fn1.length == fn2.length) return true;
+            return false;
+        }
+
+        public static bool operator !=(Furniture fn1, Furniture fn2)
+        {
+            if (fn1.material != fn2.material || fn1.height != fn2.height || fn1.width != fn2.width || fn1.length != fn2.length) return true;
+            return false;
+        }
+
+        public static bool operator >(Furniture fn1, Furniture fn2)
+        {
+            if (fn1.material == fn2.material && fn1.ReturnVolume() > fn2.ReturnVolume()) return true;
+            return false;
+        }
+
+        public static bool operator <(Furniture fn1, Furniture fn2)
+        {
+            if (fn1.material == fn2.material && fn1.ReturnVolume() < fn2.ReturnVolume()) return true;
+            return false;
+        }
     }
 }
